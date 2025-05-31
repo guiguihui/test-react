@@ -1,0 +1,58 @@
+ul, li, input,button{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    list-style: none;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.todo-list{
+    width: 600px;
+    margin: 50px auto 0;
+}
+.todo-list li{
+    height: 42px;
+    line-height: 42px;
+    text-indent: 5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+.todo-list li :nth-child(1){
+    float: left;
+}
+.todo-list li :nth-child(n+2){
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.todo-list li.no-tasks{
+    border-bottom: none;
+}
+.todo-list li.no-tasks span{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+input[type=text]{
+    width: 500px;
+    height: 32px;
+    line-height: 32px;
+    text-indent: 5px;
+    outline: none;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+button.add-btn{
+    width: 96px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #888;
+    float: right;
+    color: white;
+    border: 0;
+}
